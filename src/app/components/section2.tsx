@@ -25,8 +25,8 @@ export default function Section2(){
               <span className="md:ml-2">Discounts up to -50%</span>
               </div>
               <div className="w-[100%] flex flex-row flex-wrap md:gap-4 gap-2 justify-center items-center">
-                {products.map(e=>
-                 <div className="md:w-[268px] xs:w-[150px] w-[165px] h-[352px] md:h-[432px] bg-pr1 flex flex-col items-center justify-evenly">
+                {products.map((e,index)=>
+                 <div key={index} className="md:w-[268px] xs:w-[150px] w-[165px] h-[352px] md:h-[432px] bg-pr1 flex flex-col items-center justify-evenly">
                    <div className="w-[100%] flex justify-end pr-2">
                     <BiHeart className="md:text-3xl text-2xl text-gray-300"/>
                    </div>

@@ -7,7 +7,6 @@ import pic5  from "../public/pic4.png";
 import pic6  from "../public/pic5.png";
 import pic7  from "../public/pic6.png";
 import pic8  from "../public/pic7.png";
-import Image from "next/image";
 export default function Products(){
 
   type list={
@@ -36,8 +35,8 @@ export default function Products(){
             <span>Featured Products</span>
             </div>
             <div className="w-[100%] flex flex-row flex-wrap md:gap-4 gap-2 justify-center items-center">
-              {products.map(e=>
-               <div className="md:w-[268px] xs:w-[150px] w-[165px] h-[352px] md:h-[432px] bg-pr1 flex flex-col items-center justify-evenly">
+              {products.map((e,index)=>
+               <div key={index} className="md:w-[268px] xs:w-[150px] w-[165px] h-[352px] md:h-[432px] bg-pr1 flex flex-col items-center justify-evenly">
                  <div className="w-[100%] flex justify-end pr-2">
                   <BiHeart className="md:text-3xl text-2xl text-gray-300"/>
                  </div>
