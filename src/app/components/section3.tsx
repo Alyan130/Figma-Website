@@ -12,7 +12,7 @@ export default function Section3(){
             <p className="text-[16px] text-para hidden sm:block mb-9">Commodo fames vitae vitae leo mauris in. Eu consequat. </p>
             <button className="md:w-[183px] w-[191px] p-3 md:p-3 bg-transparent text-white border-[1px] border-white md:text-[14px] rounded-md">Shop now</button>
         </div>
-        <Image src={pic} alt="" quality={100} priority={true} className="w-[100%] h-[50vh] hidden sm:block" ></Image>
+        <Image src={pic} alt="" quality={100} priority={true} className="w-[100%] h-[55vh] hidden sm:block" ></Image>
         <Image src={pic2} alt="" className="w-[100%] h-[50vh] bg-cover sm:hidden" /> 
     </div>
     </section>

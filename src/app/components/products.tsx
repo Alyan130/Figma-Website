@@ -27,7 +27,7 @@ export default function Products(){
   ]
     return(
       <>
-      <section className="py-4 sm:py-8 w-screen max-w-screen-2xl xl:mx-auto flex items-center justify-center">
+      <section className="-py-4 sm:py-8 w-screen max-w-screen-2xl xl:mx-auto flex items-center justify-center">
         <div className="w-[90%]">
         <div className="md:w-[40%] px-2 md:px-0 w-[100%] md:text-[18px] text-[16px] text-gray opacity-40 font-font1 flex flex-row items-center justify-between mb-7 ">
             <span className="hover:text-black cursor-pointer md:ml-8">New Arrival</span>
@@ -36,7 +36,7 @@ export default function Products(){
             </div>
             <div className="w-[100%] flex flex-row flex-wrap md:gap-4 gap-2 justify-center items-center">
               {products.map((e,index)=>
-               <div key={index} className="md:w-[268px] xs:w-[150px] w-[165px] h-[352px] md:h-[432px] bg-pr1 flex flex-col items-center justify-evenly">
+               <div key={index} className="md:w-[268px] xs:w-[150px] w-[170px] h-[352px] md:h-[432px] bg-pr1 flex flex-col items-center justify-evenly">
                  <div className="w-[100%] flex justify-end pr-2">
                   <BiHeart className="md:text-3xl text-2xl text-gray-300"/>
                  </div>

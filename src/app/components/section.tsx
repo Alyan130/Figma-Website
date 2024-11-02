@@ -16,7 +16,7 @@ import {
 export default function Section(){
 return(
 <section className="py-20 sm:py-24  w-screen max-w-screen-2xl xl:mx-auto p-2 flex items-center justify-center">
-<Carousel className="w-[90%] ml-11 md:ml-0">
+<Carousel className="w-[90%] ml-2 md:ml-0">
   <CarouselContent className="w-[100%] gap-2 md:gap-0">
     <CarouselItem className="md:basis-1/2 lg:basis-1/3 p-4 flex flex-col items-center justify-center">
         <div className="mb-7">

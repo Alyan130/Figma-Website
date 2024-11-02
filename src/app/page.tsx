@@ -6,11 +6,13 @@ import Header from "./components/header";
 import Section2 from "./components/section2";
 import Section3 from "./components/section3";
 import Footer from "./components/footer";
+import Section4 from "./components/section4";
 export default function Home() {
   return (
    <main>
-  <Header/>
+   <Header/>
   <Hero/>
+  <Section4/>
   <Feature/>
   <Products/>
   <Section/>
@@ -19,6 +21,5 @@ export default function Home() {
   <Footer/>
    </main>
   )
-
 };
 

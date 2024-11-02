@@ -12,6 +12,8 @@ const config: Config = {
   		backgroundColor: {
   			home: '#211C24',
   			pr1: '#F6F6F6',
+			  "back":"#353535",
+			  back1:"#EDEDED",
   		},
 		textColor:{
 			"para":"#909090",

@@ -29,7 +29,7 @@ export default function Feature(){
 
 
     return(
-     <section className="py-24 w-screen max-w-screen-2xl xl:mx-auto flex items-center justify-center">
+     <section className="py-20 w-screen max-w-screen-2xl xl:mx-auto flex items-center justify-center">
         <div className="w-[85%]">
             <div className="w-full py-1 flex flex-row items-center justify-between  mb-5">
                 <span className="text-[24px] font-semibold">Browse By Category</span>
