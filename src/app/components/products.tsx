@@ -29,10 +29,10 @@ export default function Products(){
       <>
       <section className="-py-4 sm:py-8 w-screen max-w-screen-2xl xl:mx-auto flex items-center justify-center">
         <div className="w-[90%]">
-        <div className="md:w-[40%] px-2 md:px-0 w-[100%] md:text-[18px] text-[16px] text-gray opacity-40 font-font1 flex flex-row items-center justify-between mb-7 ">
-            <span className="hover:text-black cursor-pointer md:ml-8">New Arrival</span>
-            <span>Bestseller</span>
-            <span>Featured Products</span>
+        <div className="md:w-[40%] px-2 md:px-0 w-[100%] md:text-[18px] text-[16px] text-gray-400 font-font1 flex flex-row items-center justify-between mb-7 ">
+            <span className=" hover:text-black transition ease cursor-pointer md:ml-8">New Arrival</span>
+            <span className=" hover:text-black transition ease cursor-pointer">Bestseller</span>
+            <span className=" hover:text-black transition ease cursor-pointer">Featured Products</span>
             </div>
             <div className="w-[100%] flex flex-row flex-wrap md:gap-4 gap-2 justify-center items-center">
               {products.map((e,index)=>
@@ -45,7 +45,7 @@ export default function Products(){
                  <div className="text-center px-5">
                   <p className="text-[16px] xs:text-[15px] xs:leading[22px] leading-[24px] font-meduim mb-2 text-black">{e.text}</p>
                   <h3 className="text-[25px] font-semibold mb-3 xs:text-[22px] text-black">{e.price}</h3>
-                  <button className="md:w-[183px] w-[110px] p-1 md:p-3 bg-black text-white md:text-[14px] rounded-md">Buy Now</button>
+                  <button className="md:w-[183px] w-[110px] p-1 md:p-3 bg-black text-white md:text-[14px] rounded-[6px]">Buy Now</button>
                  </div>
                </div>
               )};

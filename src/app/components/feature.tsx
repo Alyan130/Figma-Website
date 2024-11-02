@@ -37,7 +37,7 @@ export default function Feature(){
 <Carousel className="w-[100%]">
   <CarouselContent className="p-2 md:gap-5">
     {slider.map((e,index)=>
-    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 bg-slate-100  flex flex-col items-center justify-center p-3 h-72 rounded-[18px]">
+    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 bg-slate-100  flex flex-col items-center justify-center p-3 h-72 border-r-[2px] border-gray-300">
         <Image src={e.image} alt="" width={40} height={40} className="w-[40%] mb-4"/>
         <h2 className="text-[22px]">{e.text}</h2>
     </CarouselItem>

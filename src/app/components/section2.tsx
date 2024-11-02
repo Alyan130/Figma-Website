@@ -1,9 +1,8 @@
 import { BiHeart } from "react-icons/bi";
-import pic1  from "../public/pic0.png";
-import pic2  from "../public/pic1.png";
+import pic1  from "../public/gold.png";
+import pic2  from "../public/pic3.png";
 import pic3  from "../public/ic2.png";
-import pic4  from "../public/pic3.png";
-
+import pic4  from "../public/iwhite.png";
 export default function Section2(){
     type list={
         image:string,
@@ -12,10 +11,10 @@ export default function Section2(){
       }
     
       const products:list[]=[
-       {image:pic1.src, text:"Apple iPhone 14 Pro 512GB Gold (MQ233)",price:"$900"},
-       {image:pic2.src, text:"Blackmagic Pocket Cinema Camera 6k",price:"$2535"},
-       {image:pic3.src, text:"Apple Watch Series 9 GPS 41mm Starlight Aluminium ",price:"$359"},
-       {image:pic4.src, text:"AirPods Max Silver Starlight Aluminium ",price:"$549"},
+       {image:pic1.src, text:"Apple iPhone 14 Pro 512GB Gold (MQ233)",price:"$1427"},
+       {image:pic2.src, text:"AirPods Max Silver Starlight Aluminium",price:"$549"},
+       {image:pic3.src, text:"Apple Watch Series 9 GPS 41mm Starlight Aluminium ",price:"$399"},
+       {image:pic4.src, text:"Apple iPhone 14 Pro 1TB Gold (MQ2V3) ",price:"$1499"},
       ]
        return(
         <>
@@ -26,7 +25,7 @@ export default function Section2(){
               </div>
               <div className="w-[100%] flex flex-row flex-wrap md:gap-4 gap-2 justify-center items-center">
                 {products.map((e,index)=>
-                 <div key={index} className="md:w-[268px] xs:w-[150px] w-[165px] h-[352px] md:h-[432px] bg-pr1 flex flex-col items-center justify-evenly">
+                 <div data-aos="flip-up" key={index} className="md:w-[268px] xs:w-[150px] w-[165px] h-[352px] md:h-[432px] bg-pr1 flex flex-col items-center justify-evenly">
                    <div className="w-[100%] flex justify-end pr-2">
                     <BiHeart className="md:text-3xl text-2xl text-gray-300"/>
                    </div>
@@ -35,7 +34,7 @@ export default function Section2(){
                    <div className="text-center px-5">
                     <p className="text-[16px] xs:text-[15px] xs:leading[22px] leading-[24px] font-meduim mb-2 text-black">{e.text}</p>
                     <h3 className="text-[25px] font-semibold mb-3 xs:text-[22px] text-black">{e.price}</h3>
-                    <button className="md:w-[183px] w-[110px] p-1 md:p-3 bg-black text-white md:text-[14px] rounded-md">Buy Now</button>
+                    <button className="md:w-[183px] w-[110px] p-1 md:p-3 bg-black text-white md:text-[14px] rounded-[6px]">Buy Now</button>
                    </div>
                  </div>
                 )};

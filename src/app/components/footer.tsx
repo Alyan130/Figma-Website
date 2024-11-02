@@ -7,7 +7,7 @@ return(
  <>
  <section className="w-screen max-w-screen-2xl xl:mx-auto bg-black md:py-5">
 <div className="w-full py-10 px-3 bg-black flex flex-col items-center justify-center space-y-12 md:flex-row  md:justify-evenly md:py-16">
-   <div className="text-white text-center  md:text-left">
+   <div className="text-white text-center md:-mt-24 md:text-left">
     <h2 className="text-[25px] font-bold mb-3">cyber</h2>
     <p className="text-[15px] text-para">We are a residential interior design firm located <br className="hidden md:inline"/> in Portland. Our boutique-studio offers more than</p>
    </div>
@@ -40,7 +40,7 @@ return(
     <RiWhatsappFill size={32} className="text-[white]"/>
    </div>
    </div>
-   <div className="hidden bg-black items-center justify-start ml-32 -mt-8 gap-12 md:flex p-4 ">
+   <div className="hidden bg-black items-center justify-start ml-32 -mt-8 gap-12 md:flex p-4">
     <IoLogoTwitter size={32} className="text-[white]"/>
     <FaFacebookF size={32} className="text-[white]"/>
     <RiInstagramFill size={32} className="text-[white]"/>

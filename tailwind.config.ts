@@ -21,7 +21,12 @@ const config: Config = {
   		fontWeight: {
   			font1: '500',
 			font2: "600",
+			font3:"200",
+			font4:"900",
   		},
+		fontFamily:{
+			hfont:["Inter","sans-serif"],
+		},
   		screens: {
   			'xs': '360px'
   		},
