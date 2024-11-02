@@ -8,11 +8,6 @@ import image2 from "@/app/public/image 36.png";
 import image3 from "@/app/public/image 41.png";
 import image4 from "@/app/public/Macbook 1.png"
 export default function Section4() {
-type cards={
-    image:string,
-    heading:string,
-    text:string,
-}
     return (
         <>
             <section className="w-screen max-w-screen-2xl 2xl:mx-auto hidden md:block">
