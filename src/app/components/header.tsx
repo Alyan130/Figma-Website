@@ -1,4 +1,3 @@
-
 import {CiSearch} from "react-icons/ci";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
@@ -10,6 +9,7 @@ import {
     SheetContent,
     SheetTrigger,
   } from "../components/ui/sheet";
+import Link from "next/link";
 
 export default function Header(){
  return(
@@ -26,10 +26,9 @@ export default function Header(){
     </div>
 
     <ul className="gap-10 hidden md:flex">
-        <li className="items">Home</li>
-        <li className="items">About</li>
-        <li className="items">Contact us</li>
-        <li className="items">Blog</li>
+        <Link href={"/"} ><li className="items">Home</li></Link>
+        <Link href={"/products"}><li className="items">Products</li></Link>
+        <Link href={"/contact"}><li className="items">Contact us</li> </Link>
     </ul>
 
     <div className="hidden md:flex flex-row gap-5">
@@ -42,11 +41,10 @@ export default function Header(){
   <SheetTrigger><RiMenuLine size={28} className="font-bold md:hidden"/></SheetTrigger>
   <SheetContent className="flex flex-col items-center py-32">
     <span className="text-[22px] font-bold text-white relative bottom-6 right-4 " >cyber</span>
-  <ul className="mb-4 space-y-4 text-[18px]">
-        <li className="items  hover:text-white">Home</li>
-        <li className="items   hover:text-white">About</li>
-        <li className="items  hover:text-white">Contact us</li>
-        <li className="items hover:text-white">Blog</li>
+  <ul className="mb-4 space-y-24 text-[18px]">
+        <Link href={"/"}><li className="items hover:text-white">Home</li></Link>
+        <Link href={"/products"}><li className="items   hover:text-white">Products</li></Link>
+        <Link href={"/contact"}><li className="items  hover:text-white">Contact us</li></Link>
     </ul>
     <div className="relative">
       <CiSearch className="absolute top-1/2 left-2 transform -translate-y-1/2 text-gray-500 text-[19px] font-bold" />
